@@ -1,7 +1,7 @@
 const db = require('./database_connection')
 
 module.exports = {
-    getAllMovies() {
+    getAllMovies(){
         return db('movies')
     },
     getMovieById(id){
@@ -9,7 +9,7 @@ module.exports = {
             .where({id: id})
             .first()
     },
-    addMovie(newMovie) {
+    addMovie(newMovie){
         return db('movies')
             .insert(newMovie)
             .returning('*')

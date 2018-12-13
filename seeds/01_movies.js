@@ -1,9 +1,6 @@
-
-exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
+exports.seed = (knex, Promise) => {
   return knex('movies').del()
-    .then(function () {
-      // Inserts seed entries
+    .then( () => {
       return knex('movies').insert([
         {
           title: 'Walk Hard: The Dewey Cox Story',
@@ -40,6 +37,6 @@ exports.seed = function(knex, Promise) {
           rating: 3,
           poster: 'https://upload.wikimedia.org/wikipedia/en/5/53/Team_america_poster_300px.jpg'
         }
-      ]);
-    });
-};
+      ])
+    })
+}
