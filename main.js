@@ -17,6 +17,7 @@ app.get('/:id', (req, res) => {
     .then(movie => res.json(movie))
 })
 app.post('/', (req, res) => {
+    console.log(req.body)
     queries.addMovie(req.body)
     .then(movie => res.json(movie))
 })

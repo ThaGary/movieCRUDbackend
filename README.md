@@ -2,10 +2,10 @@
 
 * JAVASCRIPT, NODE, EXPRESS, CORS, KNEX, POSTGRESQL, BODY-PARSER
 
-* Front-End:
+* Front-End: https://github.com/ThaGary/movieCRUDfrontend
 
 * Back-End: https://github.com/ThaGary/movieCRUDbackend
 
-* Site: 
+* Site: http://garysmovies.surge.sh/
 
 * Database: https://garysmovies.herokuapp.com/
